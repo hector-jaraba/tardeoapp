@@ -1,11 +1,11 @@
-import React from "react";
-import styled from "styled-components";
-import BasePlan from "./BasePlan";
-import { Plan } from "../types";
+import React from 'react'
+import styled from 'styled-components'
+import BasePlan from './BasePlan'
+import { Plan } from '../types'
 
 interface Props {
-  title: string;
-  plans: Plan[];
+  title: string
+  plans: Plan[]
 }
 
 const Wrapper = styled.div`
@@ -16,7 +16,7 @@ const Wrapper = styled.div`
   width: 11rem;
   background: white;
   color: black;
-`;
+`
 
 const PlanList: React.FC<Props> = ({ title, plans }) => {
   return (
@@ -33,7 +33,7 @@ const PlanList: React.FC<Props> = ({ title, plans }) => {
         ))}
       </div>
     </Wrapper>
-  );
-};
+  )
+}
 
-export default PlanList;
+export default PlanList
