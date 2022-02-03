@@ -47,5 +47,10 @@
   },
   "msw": {
     "workerDirectory": "public"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "bash pre_commit"
+    }
   }
 }
