@@ -50,7 +50,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "bash pre_commit"
+      "pre-commit": "yarn tsc --noEmit && yarn eslint . && yarn prettier --write ."
     }
   }
 }
