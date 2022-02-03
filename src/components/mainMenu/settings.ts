@@ -1,6 +1,9 @@
 enum menuItems {
   HOME = 'HOME',
-  PLANS = 'PLANS',
+  FAVORITES = 'FAVORITES',
+  NEW_PLAN = 'NEW_PLAN',
+  MESSAGES = 'MESSAGES',
+  PROFILE = 'PROFILE',
 }
 
 type MenuRecord = {
@@ -9,17 +12,26 @@ type MenuRecord = {
 
 export const menuLabels: MenuRecord = {
   HOME: 'Home',
-  PLANS: 'Plans',
+  FAVORITES: 'Favorites',
+  NEW_PLAN: 'New Plan',
+  MESSAGES: 'Messages',
+  PROFILE: 'Profile',
 }
 
 export const menuIcons: MenuRecord = {
   HOME: 'house',
-  PLANS: 'plan',
+  FAVORITES: 'heart',
+  NEW_PLAN: 'add',
+  MESSAGES: 'envelope',
+  PROFILE: 'user',
 }
 
 export const menuRoutes: MenuRecord = {
   HOME: '/',
-  PLANS: '/plans',
+  FAVORITES: '/favorites',
+  NEW_PLAN: '/new_plan',
+  MESSAGES: '/messages',
+  PROFILE: '/profile',
 }
 
 const createMenuItem = (index: menuItems) => ({
